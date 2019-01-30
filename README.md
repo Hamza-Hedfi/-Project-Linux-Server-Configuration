@@ -76,4 +76,4 @@ stdout_logfile=/var/log/itemcatalog/itemcatalog.out.log
 - https://flask-dance.readthedocs.io/en/latest/
 - https://help.ubuntu.com/community/Sudoers
 - https://docs.ovh.com/fr/vps/debuter-avec-vps/
-- and finally and of course google.
+- and of course google.
