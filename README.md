@@ -33,7 +33,8 @@ To                         Action      From
 2200                       ALLOW IN    Anywhere
 80/tcp (v6)                ALLOW IN    Anywhere (v6)
 123 (v6)                   ALLOW IN    Anywhere (v6)
-2200 (v6)                  ALLOW IN    Anywhere (v6)```
+2200 (v6)                  ALLOW IN    Anywhere (v6)
+```
 
 - Deployed the Item Catalog app to the server using nginx and gunicorn and performed the necessary configuration.
 ```bash
