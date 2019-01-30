@@ -5,6 +5,7 @@
 - The complete URL to my hosted web application : http://51.77.193.224.xip.io/
 
 # A summary of software I installed and configuration changes made : 
+- Update all packages.
 - Add key based authentication
 - Disable password authentication
 - Disable root remote login
@@ -18,7 +19,7 @@ PermitRootLogin no
 ...
 ```
 
-- Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
+- Configure UFW to only allow incoming connections for SSH, HTTP, and NTP.
 ```bash
 hamza@vps643599:~$ sudo ufw status verbose
 Status: active
@@ -42,7 +43,7 @@ To                         Action      From
 
 server {
     listen 80;
-    server_name YOUR_IP_OR_DOMAIN;
+    server_name 51.77.193.224;
 
     location / {
         proxy_pass http://localhost:8000;
@@ -66,3 +67,13 @@ killasgroup=true
 stderr_logfile=/var/log/itemcatalog/itemcatalog.err.log
 stdout_logfile=/var/log/itemcatalog/itemcatalog.out.log
 ```
+
+# A list of any third-party resources
+- https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart
+- https://www.youtube.com/watch?v=goToXTC96Co
+- https://gunicorn.org/#docs
+- https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
+- https://flask-dance.readthedocs.io/en/latest/
+- https://help.ubuntu.com/community/Sudoers
+- https://docs.ovh.com/fr/vps/debuter-avec-vps/
+- and finally and of course google.
